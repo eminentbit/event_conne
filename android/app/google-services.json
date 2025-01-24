@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "732138952968",
+    "project_id": "event-connect-362bb",
+    "storage_bucket": "event-connect-362bb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732138952968:android:026d779c163579616974bd",
+        "android_client_info": {
+          "package_name": "com.example.event_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732138952968-9bjdi154uge4731cd6cdbh34p0pn2g0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi831mxpuCkG1BHCVUU-Sa8yxDPkJvHXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732138952968-9bjdi154uge4731cd6cdbh34p0pn2g0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "732138952968-l2dl76iu1nedlm2d2253f9ff2td0s66f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eventConnect"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732138952968:android:8e63d854f0994a386974bd",
+        "android_client_info": {
+          "package_name": "com.socialapp.event_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732138952968-9bjdi154uge4731cd6cdbh34p0pn2g0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi831mxpuCkG1BHCVUU-Sa8yxDPkJvHXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732138952968-9bjdi154uge4731cd6cdbh34p0pn2g0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "732138952968-l2dl76iu1nedlm2d2253f9ff2td0s66f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eventConnect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
