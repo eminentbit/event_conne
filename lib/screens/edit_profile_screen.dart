@@ -110,9 +110,11 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             const SizedBox(height: 20),
 
             // Display name field (Editable)
-            TextField(
-              controller: _nameController,
-              decoration: const InputDecoration(labelText: "Full Name"),
+            Expanded(
+              child: TextField(
+                controller: _nameController,
+                decoration: const InputDecoration(labelText: "Full Name"),
+              ),
             ),
             const SizedBox(height: 10),
 

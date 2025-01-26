@@ -21,7 +21,8 @@ class _EventsScreenState extends State<EventsScreen> {
       location: "Location 1",
       description: "Description 1",
       image: "image1.png", 
-      createdBy: ''
+      createdBy: '',
+      category: Category.birthday
     ),
     Event(
       id: "2",
@@ -30,7 +31,9 @@ class _EventsScreenState extends State<EventsScreen> {
       time: "11:00 AM",
       location: "Location 2",
       description: "Description 2",
-      image: "image2.png", createdBy: ''
+      image: "image2.png", 
+      createdBy: '',
+      category: Category.funeral,
     ),
     Event(
       id: "3",
@@ -40,7 +43,8 @@ class _EventsScreenState extends State<EventsScreen> {
       location: "Location 3",
       description: "Description 3",
       image: "image3.png", 
-      createdBy: ''
+      createdBy: '', 
+      category: Category.marriage
     ),
   ];
 
@@ -55,7 +59,8 @@ class _EventsScreenState extends State<EventsScreen> {
         location: location,
         description: description,
         image: "default.png", 
-        createdBy: ''
+        createdBy: '', 
+        category: Category.birthday
       ));
     });
   }
@@ -65,7 +70,7 @@ class _EventsScreenState extends State<EventsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Events"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.green,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -74,7 +79,7 @@ class _EventsScreenState extends State<EventsScreen> {
             // Search Bar
             TextField(
               decoration: InputDecoration(
-                hintText: "Search for events...",
+                hintText: "Look for events",
                 prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -104,18 +109,24 @@ class _EventsScreenState extends State<EventsScreen> {
       ),
 
       // Floating Action Button for Adding Events
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color.fromRGBO(68, 138, 255, 1),
-        onPressed: () {
-          showModalBottomSheet(
-            context: context,
-            isScrollControlled: true, // Allows full-screen height if needed
-            builder: (context) {
-              return AddEventWidget(onAddEvent: _addEvent);
-            },
-          );
-        },
-        child: const Icon(Icons.add),
+      floatingActionButton: Center(
+        child: Row(
+          children: [
+            FloatingActionButton(
+              backgroundColor: const Color.fromRGBO(68, 138, 255, 1),
+              onPressed: () {
+                showModalBottomSheet(
+                  context: context,
+                  isScrollControlled: true, // Allows full-screen height if needed
+                  builder: (context) {
+                    return AddEventWidget(onAddEvent: _addEvent);
+                  },
+                );
+              },
+              child: const Icon(Icons.add),
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -19,7 +19,8 @@ class DashboardScreen extends StatelessWidget {
       id: '1',
       image: 'assets/images/tech_conference.jpg',
       time: '10:00 AM', 
-      createdBy: '',
+      createdBy: '', 
+      category: Category.birthday,
     ),
     Event(
       name: "Flutter Meetup",
@@ -30,6 +31,7 @@ class DashboardScreen extends StatelessWidget {
       image: 'assets/images/flutter_meetup.jpg',
       time: '2:00 PM', 
       createdBy: '',
+      category: Category.marriage
     ),
     Event(
       name: "AI Summit",
@@ -40,6 +42,7 @@ class DashboardScreen extends StatelessWidget {
       image: 'assets/images/ai_summit.jpg',
       time: '9:00 AM', 
       createdBy: '',
+      category: Category.marriage
     ),
   ];
 

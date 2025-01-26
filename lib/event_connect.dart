@@ -1,3 +1,4 @@
+import 'package:event_connect/screens/event_category_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/dashboard_screen.dart';
@@ -23,6 +24,7 @@ class _MainScreenState extends State<MainScreen> {
     DashboardScreen(),
     const EventsScreen(),
     const SettingsScreen(),
+    const EventCategoriesScreen(),
   ];
 
   @override
@@ -42,6 +44,7 @@ class _MainScreenState extends State<MainScreen> {
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.event), label: "Events"),
             BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
+            BottomNavigationBarItem(icon: Icon(Icons.category), label: "Category"),
           ],
           onTap: (index) {
             setState(() {

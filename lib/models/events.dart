@@ -1,3 +1,10 @@
+enum Category {
+  marriage,
+  birthday,
+  funeral
+}
+
+
 class Event {
   final String id;
   final String name;
@@ -6,6 +13,7 @@ class Event {
   final String description;
   final String image;
   final String time;
+  final Category category;
   final String createdBy;
 
   List<String> invitees;
@@ -18,6 +26,7 @@ class Event {
       required this.description,
       required this.image,
       required this.createdBy,
+      required this.category,
       required this.time,
       this.invitees = const []
       });
@@ -31,7 +40,8 @@ class Event {
         description: json['description'],
         image: json['image'],
         time: json['time'],
-        createdBy: json['createdBy']);
+        createdBy: json['createdBy'], 
+        category: json['category']);
   }
 
   Map<String, dynamic> toJson() {

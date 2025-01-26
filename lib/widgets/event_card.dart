@@ -43,6 +43,7 @@ class EventCard extends StatelessWidget {
                   image: 'image_url',
                   time: 'Event time', 
                   createdBy: '',
+                  category: Category.funeral
                 ),
               ),
             ),

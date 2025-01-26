@@ -38,18 +38,18 @@ class NotificationsList extends StatelessWidget {
       'eventLocation': 'City Hall',
       'eventDescription': 'A formal event with dinner and entertainment.'
     },
-    {
-      'type': 'Event Update',
-      'title': 'Event Time Changed',
-      'content': 'The meeting time has been updated.',
-      'timestamp': '9:30 AM'
-    },
-    {
-      'type': 'Event Reminder',
-      'title': 'Reminder: Team Meeting',
-      'content': 'Don\'t forget the team meeting today.',
-      'timestamp': '8:00 AM'
-    },
+    // {
+    //   'type': 'Event Update',
+    //   'title': 'Event Time Changed',
+    //   'content': 'The meeting time has been updated.',
+    //   'timestamp': '9:30 AM'
+    // },
+    // {
+    //   'type': 'Event Reminder',
+    //   'title': 'Reminder: Team Meeting',
+    //   'content': 'Don\'t forget the team meeting today.',
+    //   'timestamp': '8:00 AM'
+    // },
   ];
 
   NotificationsList({super.key});

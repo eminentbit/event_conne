@@ -1,4 +1,6 @@
+import 'package:event_connect/screens/account_settings_screen.dart';
 import 'package:event_connect/screens/edit_profile_screen.dart';
+import 'package:event_connect/screens/privacy_policy_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:event_connect/screens/login_screen.dart';
 import 'package:event_connect/screens/notifications.dart';
@@ -49,7 +51,11 @@ class SettingsScreen extends StatelessWidget {
             icon: Icons.lock,
             title: "Privacy & Security",
             onClick: () {
-              // Navigate to Privacy & Security Page
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => const PrivacyPolicyPage(),
+                ),
+              );
             },
           ),
           SettingsOption(
@@ -57,6 +63,11 @@ class SettingsScreen extends StatelessWidget {
             title: "Account Settings",
             onClick: () {
               // Navigate to Account Settings Page
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => const AccountSettingsScreen(),
+                ),
+              );
             },
           ),
           // const SettingsOption(

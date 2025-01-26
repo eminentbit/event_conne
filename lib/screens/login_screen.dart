@@ -184,7 +184,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     try {
                       UserCredential? user = await signInWithGoogle();
                       print(user);
-                      Navigator.of(context).pushReplacement(
+                      Navigator.of(context).push(
                         MaterialPageRoute(builder: (ctx) => const MainScreen()),
                       );
                     } catch (e) {

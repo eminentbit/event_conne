@@ -13,6 +13,7 @@ Future<void> main() async {
   FirebaseMessaging.instance.requestPermission();
   runApp(
    const  MaterialApp(
+    debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     ),
   );
